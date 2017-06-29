@@ -32,9 +32,10 @@
 	
 	<!-- Compiling and copying the files from EjbModule and WebModiule --> 
 	<target name="compile" depends="init"> 
-		<javac srcdir="${webModule}/src" destdir="${webDir}/classes" includes="**/*.java"> 
+		<!--<javac srcdir="${webModule}/src" destdir="${webDir}/classes" includes="**/*.java">
 			<classpath refid="libClasspath"/> 
-		</javac> 
+		</javac>  -->
+		
 		<copy todir="${webDir}/lib">
 			<fileset dir="${webRootDir}/lib" includes="**/*.jar"/> 
 		</copy>
