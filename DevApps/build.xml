@@ -64,7 +64,7 @@
 	<!-- Creating Ear File -->
 	<!-- <target name="buildEar" depends="buildJar,buildWar">  -->
 	<target name="buildEar" depends="buildWar"> 
-		<jar jarfile="${build}/${ant.project.name}.ear" basedir="${earDir}"/> 
+		<jar jarfile="${build}/DevAppsGit.ear" basedir="${earDir}"/> 
 	</target>
 
 </project>
